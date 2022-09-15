@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biodata diri saya</title>
+</head>
+<body>
+<h1 align="center">Selamat datang di Website Gabriel Indrawan</h1>
+<hr color="red" width="100%" size="5">
+<br><br>
+<h2 align="center"><b>Berikut adalah data diri saya : </b></h2>
+<br> <br>
+<table align="center" width="700">
+    <tr>
+        <td>Nama </td>
+        <td>: Gabriel Indrawan</td>
+        <td align="center">Nama peserta : Gabriel Indrawan</td>
+    </tr>
+    <tr>
+        <td>NIM </td>
+        <td>: A11.2022.13979</td>
+        <td rowspan="6" align="center"><img src="C:\Users\ASUS\Pictures\Diriku.jpeg" height="180" 
+            height = "120"></td>
+    </tr>
+    <tr>
+        <td>Umur </td>
+        <td>: 18 tahun</td>
+    </tr>
+    <tr>
+        <td>Asal </td>
+        <td>: Semarang, Jawa Tengah</td>
+    </tr>
+    <tr>
+        <td>Alamat </td>
+        <td>: Jalan Tirtoyoso Tengah No.11A</td>
+    </tr>
+    <tr>
+        <td>No. HP </td>
+        <td>: 8895297433</td>
+    </tr>
+    <tr>
+        <td>Alumni </td>
+        <td>: SMK Nusaputera 1 Semarang</td>
+    </tr>
+</table>
+<br> <br> <br>
+<footer>
+<table align="center" width="330" cellpadding="5" align="center">
+    <tr>
+        <td><a href="https://www.instagram.com/gabrielindrawan/">
+        <img src="C:\Users\ASUS\Pictures\Instagram_App_Large_May2016_200.png" width="25">gabrielindrawan</a></td>
+        <td><a href="https://www.facebook.com/gabriel.indrawan.10/">
+        <img src="C:\Users\ASUS\Pictures\Cara-Mengganti-Nama-Facebook2.jpg" width="25">Gabriel Indrawan</a></td>
+    </tr>
+</table>
+</footer>
+</body>
+</html>
