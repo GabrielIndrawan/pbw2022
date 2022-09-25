@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba-coba video</title>
+</head>
+<style>
+
+    body {
+        background-image: url('Photos and videos\\Background1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<body>
+    <h1 align="center">Latihan membuat opsi video</h1>
+    <center>
+    <p1>
+        <button onclick="playVid()">Play Video</button> 
+        <button onclick="pauseVid()">Pause Video</button> 
+        <button onclick="muteVid()">Mute Video</button> 
+        <button onclick="unmuteVid()">Unmute Video</button> 
+        <button onclick="enableAutoplay()">Enable Autoplay</button> 
+        <button onclick="disableAutoplay()">Disable Autoplay</button>
+    </p1>
+    </center>
+    <br>
+    <center>
+        <video id="Video1" width="450" height="270">
+            <source src="Photos and videos\\Tesvideo.mp4" type="video/mp4">
+            Your browser does not support video tag.
+        </video>
+    </center>
+    <br>
+    <center>
+    <p1>
+        <button onclick="setfirstquarterfVolume()">Set volume to 0.25</button>
+        <button onclick="setHalfVolume()" type="button">Set volume to 0.5</button>
+        <button onclick="setthirdquarterVolume()">Set volume to 0.75</button>
+        <button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+        <button onclick="getVolume()" type="button">What is the volume?</button>
+    </p1>
+    </center>
+    <br>
+    <center>
+        <audio id="Lagu1">
+            <source src="Photos and videos\\Desmeon Hellcat.mp3" type="audio/mp3"
+        </audio>
+    </center>
+    <br>
+    <center>
+        <p1>
+        <button onclick="playAud()" type="button">Play music</button>
+        <button onclick="pauseAud()" type="button">Pause music</button>
+        <button onclick="setfirstquarterfVolumeAud()" type="button">Set volume to 0.15</button>
+        <button onclick="setHalfVolumeAud()" type="button">Set volume to 0.5</button>
+        <button onclick="setFullVolumeAud()" type="button">Set volume to 1.0</button>
+        </p1>
+    </center>
+</body>
+<script>
+    var vid = document.getElementById("Video1");
+
+    function playVid() {
+        vid.play();
+        vid.loop=true;
+    }
+
+    function pauseVid() {
+        vid.pause();
+    }
+
+    function muteVid() {
+        vid.muted = true;
+    }
+
+    function unmuteVid() {
+        vid.muted = false;
+    }
+
+    function enableAutoplay() { 
+        vid.autoplay = true;
+        vid.load();
+    }
+
+    function disableAutoplay() { 
+        vid.autoplay = false;
+        vid.load();
+    } 
+
+    function setHalfVolume() { 
+        vid.volume = 0.5;
+    } 
+  
+    function setFullVolume() { 
+        vid.volume = 1.0;
+    } 
+
+    
+    function setfirstquarterfVolume() { 
+        vid.volume = 0.2;
+    } 
+  
+    function setthirdquarterVolume() { 
+        vid.volume = 0.75;
+    } 
+
+    function getVolume() { 
+        alert(vid.volume);
+    } 
+
+    var aud = document.getElementById("Lagu1");
+
+    function playAud() {
+        aud.play();
+        aud.loop=true;
+    }
+
+    function pauseAud() {
+        aud.pause();
+    }
+
+    function setfirstquarterfVolumeAud() { 
+        aud.volume = 0.15;
+    } 
+
+    function setHalfVolumeAud() {
+        aud.volume = 0.5;
+    }
+
+    function setFullVolumeAud() {
+        aud.volume = 1.0;
+    }
+
+
+</script>
+</html>
