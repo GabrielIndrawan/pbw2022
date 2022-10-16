@@ -1,0 +1,108 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS//Webkucss.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Multimedia</h1>
+    </header>
+    <hr size="10" color="silver">
+    <nav>
+        <table width="100%" align="center">
+            <tr>
+                <td align="center"><button><a href="Webku.html">Home</a></button></td>
+                <td align="center"><button><a href="Audio.html">Audio</a></button></td>
+                <td align="center"><button><a href="Form.html">Form</a></button></td>
+                <td align="center"><button><a href="Video Youtube.html">Youtube video</a></button></td>
+            </tr>
+        </table>
+    </nav>
+    <main>
+        <aside>
+            <p>Namaku adalah Gabriel Indrawan.<br>
+            Saya sedang melakukan tes untuk membuat sebuah website.</p>
+        </aside>
+        <article align="center">
+            <br>
+            <video id="Video">
+                <source src="Photos and videos\\Video Tugas.mp4" type="video/mp4" controls>
+                <track default src="VTT//Subtitelvideo.vtt" kind="captions" srclang="id" label="Indonesia"
+                default>
+            </video>
+            <br>
+            <button onclick="playVid()" type="button">Play</button>
+            <button onclick="pauseVid()" type="button">Pause</button>
+            <button onclick="muteVid()" type="button">Mute</button>
+            <button onclick="unmuteVid()" type="button">Unmute</button>
+            <button onclick="setHalfVolume()" type="button">Half Volume</button>
+            <button onclick="setFullVolume()" type="button">Full Volume</button>
+            <button onclick="enableAutoplay()" type="button">Autoplay</button>
+            <button onclick="disableAutoplay()" type="button">Disable Autoplay</button>
+            <details>
+                <summary>Lihat info video</summary>
+                video ini berdurasi sekitar 40 detik, Saya membuat video ini di rumah.
+            </details>
+            <br>
+            <img src="Photos and videos\\Gambar anak sekolah.png" >
+        </article>
+    </main>
+    <footer>
+        <br>
+        <table align="center">
+            <tr>
+                <td align="center"><a href="https://www.instagram.com/gabrielindrawan"><img src="Photos and videos//Instagram.png" width="30" height="30"></a></td>
+                <td><a href="https://www.instagram.com/gabrielindrawan">GabrielIndrawan</a></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td align="center"><a href="https://www.facebook.com/gabriel.indrawan.10/"><img src="Photos and videos//Facebook.jpg" eidth="30" height="30"></a></td>
+                <td><a href="https://www.instagram.com/gabrielindrawan">Gabriel Indrawan</a></td>
+            </tr>
+        </table>
+        <br>
+    </footer>
+</body>
+<script>
+    var vid = document.getElementById("Video");
+
+function playVid() {
+    vid.play();
+    vid.loop=true;
+}
+
+function pauseVid() {
+    vid.pause();
+}
+
+function muteVid() {
+    vid.muted = true;
+}
+
+function unmuteVid() {
+    vid.muted = false;
+}
+
+function enableAutoplay() { 
+    vid.autoplay = true;
+    vid.load();
+}
+
+function disableAutoplay() { 
+    vid.autoplay = false;
+    vid.load();
+} 
+
+function setHalfVolume() { 
+    vid.volume = 0.5;
+} 
+
+function setFullVolume() { 
+    vid.volume = 1.0;
+} 
+
+</script>
+</html>
