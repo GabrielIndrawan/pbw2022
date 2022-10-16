@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS//Webkucss.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Audio</h1>
+    </header>
+    <hr size="10" color="silver">
+    <nav>
+        <table width="100%" align="center">
+            <tr>
+                <td align="center"><button><a href="Webku.html">Home</a></button></td>
+                <td align="center"><button><a href="WEBMULTIMEDIA.HTML">Multiedia</a></button></td>
+                <td align="center"><button><a href="Form.html">Form</a></button></td>
+                <td align="center"><button><a href="Video Youtube.html">Youtube video</a></button></td>
+            </tr>
+        </table>
+    </nav>
+    <main>
+        <aside>
+            <p>Namaku adalah Gabriel Indrawan.<br>
+            Saya sedang melakukan tes untuk membuat sebuah website.</p>
+        </aside>
+        <article>
+            <p1 align="center"><audio id="audio" src="Photos and videos//Cradles.mp3" type="audio/mp3">
+            </audio></p1>
+            <br>
+            <p align="center">
+                <button onclick="playAud()">Play</button>
+                <button onclick="pauseAud()">Pause</button>
+                <button onclick="setFullVolumeAud()">Set Full Volume</button>
+                <button onclick="setHalfVolumeAud()">Set Half Volume</button>
+            </p>
+        </article>
+
+    </main>
+    <footer>
+        <br>
+        <table align="center">
+            <tr>
+                <td align="center"><a href="https://www.instagram.com/gabrielindrawan"><img src="Photos and videos\\Instagram.png" width="30" height="30"></a></td>
+                <td><a href="https://www.instagram.com/gabrielindrawan">GabrielIndrawan</a></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td align="center"><a href="https://www.facebook.com/gabriel.indrawan.10/"><img src="Photos and videos\\Facebook.jpg" eidth="30" height="30"></a></td>
+                <td><a href="https://www.instagram.com/gabrielindrawan">Gabriel Indrawan</a></td>
+            </tr>
+        </table>
+        <br>
+    </footer>
+</body>
+<script>
+    var aud = document.getElementById("audio");
+
+    function playAud() {
+    aud.play();
+    aud.loop=true;
+    }
+
+    function pauseAud() {
+    aud.pause();
+    }
+
+    function setHalfVolumeAud() {
+    aud.volume = 0.5;
+    }
+
+    function setFullVolumeAud() {
+    aud.volume = 1.0;
+    }      
+
+</script>
+</html>
