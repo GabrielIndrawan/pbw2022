@@ -1,0 +1,39 @@
+body{
+    margin :auto;
+    background-color: blue;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: aquamarine;
+    margin : auto;
+    padding :0%;
+}
+
+nav{
+    background-color: cornflowerblue;
+}
+
+aside{
+    background-color: black;
+}
+
+p {
+    color: white;
+}
+
+article{
+    background-color: brown;
+}
+
+footer{
+    background-color: crimson;
+}
+
+video{
+    width: 650px;
+    height: 325px;
+}
