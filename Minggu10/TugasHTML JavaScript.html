@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan JavaScript</title>
+    <script>
+        function hitungwaktu() {
+            var namaku = document.Formhitung.nama.value;
+            var jamawal = eval(document.Formhitung.jamawal.value);
+            var menitawal = eval(document.Formhitung.menitawal.value);
+            var detikawal = eval(document.Formhitung.detikawal.value);
+            var jamakhir = eval(document.Formhitung.jamakhir.value);
+            var menitakhir = eval(document.Formhitung.menitakhir.value);
+            var detikakhir = eval(document.Formhitung.detikakhir.value);
+            var lamainterval = eval((jamakhir*3600+menitakhir*60+detikakhir)-(jamawal*3600+menitawal*60+detikawal));
+            var jamhasil = lamainterval/3600;
+            var menithasil = (lamainterval%3600)/60;
+            var detikhasil = lamainterval%60; 
+
+            document.writeln("Kamu adalah ", namaku," kamu belajar selama ", jamhasil," jam, ",menithasil," menit, dan ",detikhasil," detik.");
+
+        }
+    </script>
+    <style>
+
+        form{
+            text-align: center;
+        }
+
+        body{
+            background-image: url("Gambar gedung.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Latihan JavaScript menghitung lama waktu belajar</h1>
+    <form name="Formhitung" action="#">
+        <br>
+        Nama : <input type="text" name="nama"> <br>
+        <br>
+        Tentukan waktu kamu memulai belajar : <br>
+        <br>
+        jam   : <input type="number" name="jamawal" > <br>
+        <br>
+        menit : <input type="number" name="menitawal"> <br>
+        <br>
+        detik : <input type="number" name="detikawal"> <br>
+        <br>
+        Tentukan waktu kamu selesai belajar : <br>
+        <br>
+        jam   : <input type="number" name="jamakhir"> <br>
+        <br>
+        menit : <input type="number" name="menitakhir"> <br>
+        <br>
+        detik : <input type="number" name="detikakhir"> <br>
+        <br>
+        Tekan tombol dibawah untuk menentukan hasil dan kesimpulan : <br>
+        <button onclick="hitungwaktu()">Tentukan Hasil</button><br>
+        <br>
+    </form>
+</body>
+</html>
