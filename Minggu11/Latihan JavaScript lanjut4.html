@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan JavaScript lanjut</title>
+</head>
+<script>
+    var ulangi = confirm("Apakah anda mau mengulang?"); 
+var counter = 0; 
+ 
+while(ulangi){ 
+    counter++; 
+    ulangi = confirm("Apakah anda mau mengulang?"); 
+} 
+ 
+document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali<br>"); 
+
+if(counter==0)
+{
+    document.write("Anda belum mengulang sama sekali...<br>");
+}
+else if(counter>0 && counter<=5)
+{
+    document.write("Anda baru mengulang sedikit...<br>");
+}
+else
+{
+    document.write("Anda sudah banyak mengulang ini...");
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>
